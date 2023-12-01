@@ -25,3 +25,20 @@ let start_button = start.querySelector('a');
 let og_color = start_button.style.color;
 let inter = 0;
 
+start.addEventListener('mouseover', (e) => {
+  
+ ex = 20;  
+ inter = setInterval(()=>{  
+    start_button.style.color = '#'+Math.floor(Math.random()*16777215).toString(16); 
+  }, 1000); //too clever? might change it
+  
+});
+
+
+start.addEventListener('mouseout', (e) => {
+  
+  ex = 10;
+  clearInterval(inter);
+  start_button.style.color = og_color; 
+  
+});
