@@ -115,6 +115,33 @@
     width: 94px;
     margin-left: 173px;
   }
+#brand{  
+  text-align:left;
+  cursor:pointer;
+}
+#brand img{
+  display:block;
+  width:80vw;
+  max-width:100px;
+  height:auto;
+  transition:0.2s
+}
+#brand a{
+  display:block;
+  font-family: 'Passion One';
+  font-size:1em;
+  color:#333;
+  font-weight:800;
+  text-decoration:none;
+  background:rgba(0,0,40,0);
+  padding:5px 15px;
+  transition:0.4s
+}
+#brand:hover a{  
+  color:rgba(200,80,50,1);
+  text-shadow:2px 5px 0 rgba(0,0,0,0.6)
+}
+
   
 }</style>
     
@@ -155,7 +182,11 @@
   <button class="pj-button u-color pj-xlarge pj-left" onclick="openLeftMenu()"><img width="30" height="30" src="images/barra-de-menu.png" /></button>
   <button class="pj-button u-color pj-xlarge pj-right" onclick="openRightMenu()"><img width="30" height="30" src="images/barra-de-menu.png" /></button>
   <div class="pj-container">
-    <h1>My Page</h1>
+	  
+    <div id="brand"><img src="https://78.media.tumblr.com/105ac1a1cc31e1a054527ffa02e08bf1/tumblr_oz2iyb56V91u6t6uao1_540.png">
+  <a href="#">PRESS START</a>
+</div>
+
   </div>
 </div>
 </div>
