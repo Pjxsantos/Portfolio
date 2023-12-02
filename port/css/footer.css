@@ -3,8 +3,8 @@ section{
   text-align:center;
 }
 .footer #button{
-	width:35px;
-	height:35px;
+	width:45px;
+	height:45px;
 	border: #727172 12px solid;
 	border-radius:35px;
 	margin:0 auto;
@@ -16,8 +16,8 @@ section{
     transition: all 1s ease;
 }
 .footer #button:hover{
-	width:35px;
-	height:35px;
+	width:45px;
+	height:45px;
 	border:#56FF00 12px solid;
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
