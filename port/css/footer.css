@@ -18,7 +18,7 @@ section{
 .footer #button:hover{
 	width:35px;
 	height:35px;
-	border: #3A3A3A 12px solid;
+	border:#56FF00 12px solid;
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
