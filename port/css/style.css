@@ -36,7 +36,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .pj-hoverable tbody tr:hover,.pj-ul.pj-hoverable li:hover{background-color:#ccc}.pj-centered tr th,.pj-centered tr td{text-align:center}
 .pj-table td,.pj-table th,.pj-table-all td,.pj-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .pj-table th:first-child,.pj-table td:first-child,.pj-table-all th:first-child,.pj-table-all td:first-child{padding-left:16px}
-.pj-btn,.pj-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:#ffffff;background-color:#000000;text-align:center;cursor:pointer;white-space:nowrap}
 .pj-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .pj-btn,.pj-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .pj-disabled,.pj-btn:disabled,.pj-button:disabled{cursor:not-allowed;opacity:0.3}.pj-disabled *,:disabled *{pointer-events:none}
