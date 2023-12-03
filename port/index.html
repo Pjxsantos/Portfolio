@@ -49,7 +49,235 @@
 </head>
 
 
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - amp.header.sidebar</title>
+  
 
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <title>bantennow.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="bantennow.com">
+  
+  <!-- Script.js disini -->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+  <script src="script.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-1.0.js"></script>
+  
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+  <style amp-custom>
+    /* Add your custom styles disini */
+    /* Global Styles */
+    body {
+      font-family: "Arial Nova", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styles */
+    .header {
+      background-color: #f8f8f8;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      margin-right: 10px;
+      width: 35px;
+    }
+
+    .logo-text {
+      display: none; /* untuk mengeluarkan tulisan logo ganti dengan "display: inline-block" */
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      vertical-align: middle;
+      margin-left: 10px;
+      font-size: 20px;
+      background: linear-gradient(to right, #005EB8, #DC582A);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .dropdown-icon {
+      font-size: 24px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    /* Sidebar Styles */
+    .sidebar-wrapper {
+      padding: 10px;
+    }
+
+    .menu-item {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+    }
+
+    ol {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .divider {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 5px;
+    }
+
+    .search-menu {
+      margin-top: 10px;
+    }
+
+    form {
+      display: flex;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: #005EB8;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #DC582A;
+    }
+
+    /* Custom Colors */
+    .menu-item h2 {
+      color: #005EB8; /* OCEAN BLUE */
+    }
+
+    .menu-item a {
+      color: #000;
+      transition: color 0.3s ease;
+    }
+
+    .menu-item a:hover {
+      color: #DC582A; /* Dark Orange */
+      text-decoration: underline;
+      font-weight: bold;
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-header">
+      <amp-img class="logo-img" src="https://www.bantennow.com/wp-content/uploads/2023/05/logo-www.bantennow-com-fc.png" width="185" height="33" alt="logo"></amp-img>
+      <h1 class="logo-text"></h1>
+    </div>
+    <button class="dropdown-icon" on="tap:sidebar.toggle">☰</button>
+  </header>
+  
+  <amp-sidebar id="sidebar" layout="nodisplay" side="left">
+    <div class="sidebar-wrapper">
+      <div class="menu-item">
+        <h2>Kategori</h2>
+        <ol>
+          <li><a href="#">📰 Berita</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">📊 Bisnis</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">👫 Komunitas</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">⚽ Olahraga</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">🚗 Otomotif</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">📝 Opini</a></li>
+          <li><span class="divider"></span></li>
+        </ol>
+      </div>
+      <div class="menu-item">
+        <h2>Informasi</h2>
+        <ol>
+          <li><a href="#">🙋‍♂️ Tentang Kami</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">✍️ Redaksi</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">📚 Pedoman Media Siber</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">🔐 Copyright</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">⚠️ Disclaimer</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">⚖️ Privacy Policy</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">💌 Kotak Pos</a></li>
+          <li><span class="divider"></span></li>
+          <li><a href="#">📢 Info Iklan</a></li>
+          <li><span class="divider"></span></li>
+        </ol>
+      </div>
+      <div class="menu-item">
+        <h2>Search</h2>
+        <ol class="search-menu">
+          <form method="GET" action="/search" target="_top">
+            <input type="text" placeholder="Search" name="q">
+            <button type="submit">🔍︎</button>
+          </form>
+        </ol>
+      </div>
+    </div>
+  </amp-sidebar>
+  
+  <main>
+    <!-- Main content of the page disini -->
+  </main>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
 	
     <div id="brand"><a href="#"><img width="120px;" height="auto" src="images/log.png"></a></div>
     
