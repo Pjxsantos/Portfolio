@@ -47,7 +47,7 @@ section{
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-	height: 10em;
+	height: 12em;
 }
 .footer #container{
 	margin-top:5px;
@@ -73,7 +73,7 @@ height:100%;
 }
 .footer h3{
 	font-family: 'Helvetica';
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 100;
 	margin-top:70px;
 	margin-left:40px;
