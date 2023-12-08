@@ -15,6 +15,7 @@ body {
 header {
   background-color: var(--theme);
   padding: 20px;
+  width: 100%;
 }
 
 header h1 {
