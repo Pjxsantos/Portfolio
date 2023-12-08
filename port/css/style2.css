@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo:400,700=Teko');
+@import url('https://fonts.googleapis.com/css?family=Cairo:400,700=arabic);
 
 .menu-outer:hover ~ .menu-close {
   margin-right:-100px;
