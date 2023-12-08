@@ -297,6 +297,35 @@
       box-sizing: border-box;
       width: 100%;
       }
+      
+  .container {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+}
+
+.panel {
+  box-shadow: 0 5px 1rem rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.5s ease-in;
+}
+
+.panel h3 {
+  font-size: calc(24 / 16 * 1rem);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
     </style>
     <div class="container portfolio">
     <div class="row">
@@ -336,6 +365,24 @@
     <div style="color: #000000;">
       <h2> Código fonte </h2>
     </div>
+      <div class="container">
+  <div class="panel active" style="background-image: url('https://images3.alphacoders.com/106/thumb-1920-1061065.png')">
+    <h3>What do you find so entertaining?</h3>
+  </div>
+
+  <div class="panel" style="background-image: url('https://wallpaperaccess.com/full/5283070.jpg')">
+    <h3>What's so amusing about this?</h3>
+  </div>
+  <div class="panel" style="background-image: url('https://images8.alphacoders.com/103/thumb-1920-1034735.png')">
+    <h3>What do you take life for, exactly?</h3>
+  </div>
+  <div class="panel" style="background-image: url('https://wallpaperaccess.com/full/5112296.jpg')">
+    <h3>Why can't you understand?</h3>
+  </div>
+  <div class="panel" style="background-image: url('https://wallpaperaccess.com/full/3518463.jpg')">
+    <h3>How can you forget?</h3>
+  </div>
+      </div>
     <div>
       <textarea style="font-size: 16px; color: #C8102E;" readonly rows='40' >
       </textarea>
