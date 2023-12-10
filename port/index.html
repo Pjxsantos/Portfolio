@@ -333,7 +333,7 @@
     </div>
     <br>
       <div>
-    <header style="background-color: #000000; border: 2px solid #373838; border-radius: 4px;">
+    <div style="background-color: #000000; border: 2px solid #373838; border-radius: 4px;">
     <div style="color: #ffffff;">
       <a href="https://github.com/Pjxsantos"><img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" width="48"></a><h2><b>Github</b></h2>
     </div>
@@ -342,7 +342,8 @@
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pjxsantos&layout=donut&theme=transparent&color=25D366" width="80%" height="auto">
       <img src="https://komarev.com/ghpvc/?username=Pjxsantos&label=VISITAS+AO+PERFIL&color=C8102E" width="30%" height="auto"><br>
     <div>
-      <textarea style="font-size: 14px; color: #28F765; background-color: #373838; border: 2px solid #28F765; border-radius: 4px;" readonly rows='20' >
+      <button id="copy">copiar</button>      
+      <textarea id="text" style="font-size: 14px; color: #28F765; background-color: #373838; border: 2px solid #28F765; border-radius: 4px;" readonly rows='20' >
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -713,7 +714,7 @@
 
       </textarea>
     </div>
-    </header>
+    </div>
       </div>
     <!-- footer -->
     <div class="footer">
@@ -734,5 +735,14 @@
         </div>
       </div>
     </div>
+  <script type="text/javascript">
+    const textInput = document.getElementById('text');
+    const copyButton = document.getElementById('copy');
+
+    copyButton.addEventListener('click', ()=> {
+      textInput.select();
+      document.execCommand('copy');
+    });
+  </script>
   </body>
 </html>
