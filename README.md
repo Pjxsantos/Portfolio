@@ -6,7 +6,7 @@
 
 <p>Sou um web designer novato e crio web designs personalizados. Tenho habilidade em escrever códigos bem projetados, testáveis ​​e eficientes usando as melhores práticas atuais em desenvolvimento Web. Aprendo rápido, trabalho duro e trabalho em equipe, com proficiência na criação de páginas da web criativas e inovadoras.</p>
 
-<a href="https://pjxsantos.github.io/Portfolio/port/">
+<a href="https://pjxsantos.github.io/">
  Portfólio </a>
 
 <h2>Não tenho nenhum talento especial, sou apenas apaixonadamente curioso 😉</h2>
